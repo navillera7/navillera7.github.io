@@ -1,9 +1,326 @@
 <!DOCTYPE html>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 <html>
-    <head>
-        <h1>!!!생일 축하드려요!!!!</h1>
-    </head>
-    <body>
-        <p>태양절이 사실 4월 8일이래요 -선우-</p>
-    </body>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+		<title>생일 축하드려요</title>
+		<style>
+		.column{
+			column-count: 5;
+		}
+		p {
+			border: 10px solid rgb(0, 0, 0);
+			padding: 5%;
+			margin: 5%;
+			width: 30%;
+			box-align: center;
+			font-family: 'Nanum Pen Script', cursive;
+			text-align: left;
+			font-size: 25px;
+			color:rgb(0, 0, 0);
+			background-color: #F4D74F;
+		}
+		#father {
+			position: absolute;
+			right: 10px;
+			top: 110px;
+		}
+		#brother {
+			position: absolute;
+			top: 600px;
+			right: 10px;
+		}
+		#heading{
+			font-family: 'Nanum Pen Script', cursive;
+			text-align: center;
+			font-size: 60px;
+		}
+		#grandma {
+			font-family: 'Nanum Pen Script', cursive;
+			text-align: left;
+			font-size: 30px;
+			color:#95E0C8;
+		}
+		body	{
+			background-color : #1bcf96;
+		}
+
+		#click{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			padding: 0%;
+			margin: 0;
+			width: 1%;
+			background-color: #1bcf96;
+		}
+		h1{color: rgb(0, 0, 0)}
+
+		@keyframes 			firework-animation {
+			0% {background-color : #27221f;}
+			25% {background-color : #8d9eb7;}
+			50% {background-color : #ff83f4;}
+			75% {background-color : #83b6ff;}
+			100% {background-color : #ff8426;}
+		}
+		@-webkit-keyframes 	firework-animation {
+			0% {background-color : #ff8426;}
+			25% {background-color : #fffc84;}
+			50% {background-color : #ff83f4;}
+			75% {background-color : #83b6ff;}
+			100% {background-color : #ff8426;}
+		}
+		@keyframes 			firework-seed-animation	{
+			0% {background-color : #ff8426;}
+			25% {background-color : #fffc84;}
+			100% {background-color : #ff8426;}
+		}
+		@-webkit-keyframes	firework-seed-animation	{
+			0% {background-color : #ff8426;}
+			25% {background-color : #fffc84;}
+			100% {background-color : #ff8426;}
+		}
+		@keyframes 			firework-fade-animation {
+			0% {opacity : 1;}
+			50% {opacity : 1;}
+			100% {opacity : 0;}
+		}
+		@-webkit-keyframes 	firework-fade-animation {
+			0% {opacity : 1;}
+			50% {opacity : 1;}
+			100% {opacity : 0;}
+		}
+		.fireWorkBatch {
+			z-index : 999;
+			position: absolute;
+			top : 0px;
+			left : 0px;
+			animation-name : firework-fade-animation;
+			animation-timing-function : cubic-bezier(0.5, 0, 1. 1);
+			animation-duration : 2.5s;
+		}
+		.fireWorkParticle {
+			z-index : 999;
+			position: absolute;
+			height : 5px;
+			width : 5px;
+			border-radius : 2.5px;
+			animation-name : firework-animation;
+			animation-timing-function : linear;
+			animation-duration : 1s;
+			animation-iteration-count : infinite;
+		}
+		.fireWorkSeed {
+			z-index : 999;
+			position: absolute;
+			height : 5px;
+			width : 5px;
+			border-radius : 5px;
+			animation-name : firework-seed-animation;
+			animation-timing-function : linear;
+			animation-duration : 0.5s;
+			animation-iteration-count : infinite;
+		}		
+
+
+		
+		</style>
+	</head>
+	<body>
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+		<h1 id="heading">
+			당신의 생일을 축하합니다! 🎂🎂
+		</h1>
+		<p id="click">
+			클릭!
+		</p>
+		<p>
+
+			은정아 생일 축하한다!<br>
+			최씨 집안에 시집 온지도 어언 20년이 되었네<br>
+			오랜 세월이 지났지만 조금도 변함없는 내 <b>사랑</b>하는 며느리<br>
+			한번도 내 마음 전한 적 없지만 항상 응원하고 <b>사랑</b>한단다.<br>
+			머나먼 타국에서 신랑, 두 아들, <br>그 가정 조금도 흔들림 없이 잘 지켜주었구나. <br>
+			앞으로도 건강 챙기고 항상 밝은 모습 행복한 꽃밭같은 가정으로 걸어가길 바라면서.<br><br>
+
+			시어머니가 며느리에게
+		</p>
+
+		<p id="father">
+			은정, 45번째 생일 축하해,<br><br> 
+
+			첨엔 외모가 뛰어나서 좋았지만, <br>
+			너의 사려깊은 마음 씀씀이도 멋있어. <br><br>
+
+			늘 건강하고, 힘들 땐 나와 아이들과 함께 의지하면서 버텨보자.<br>
+			세월이 갈수록 더 의미있고 보람찬 내일을 만들어 가길 응원할게. 
+		</p>
+
+		<p>
+			엄마 생일 축하드려요. <br>우리 가족 참 "사랑해"라는 말에 인색해요 그쵸? ㅎㅎ <br>이렇게 잘 할 수 있으면서 뭐가 그리 쑥쓰러워 저 한마디를 못 하는 걸까요. <br>어쩌면 지금 쓰려고 아껴놨을지도 모르죠. <br><br>사랑해요 엄마. 머나먼 땅에서 선우가 
+		</p>
+
+		<p id="brother">
+			엄마 16년 동안 먹여주고 재워주느라 고생 많았어. <br>밴쿠버에서도 하고싶은 일 다 하고 재밌게 살자. 
+
+		</p>
+
+	</body>
+	<script>
+		var brd = document.createElement("DIV");
+		document.body.insertBefore(brd, document.getElementById("board"));
+
+		seeds = [];
+		particles = [];
+
+		const fwkPtcIniV = 0.5;
+		const fwkSedIniV = 0.5;
+		const fwkPtcIniT = 2500;
+		const fwkSedIniT = 1000;
+		const a = 0.0005;
+		const g = 0.0005;
+		const v = 0.3;
+		const cursorXOffset = 5;
+		const cursorYOffset = 0;
+
+
+		function newFireworkParticle(x, y, angle)
+		{
+			var fwkPtc = document.createElement("DIV");
+			fwkPtc.setAttribute('class', 'fireWorkParticle');
+			fwkPtc.time = fwkPtcIniT;
+			while(angle > 360)
+				angle -= 360;
+			while(angle < 0)
+				angle += 360;
+			fwkPtc.velocity = [];
+			if(angle > 270)
+			{
+				fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+				fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+			}
+			else if(angle > 180)
+			{
+				fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+				fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+			}
+			else if(angle > 90)
+			{
+				fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+				fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+			}
+			else
+			{
+				fwkPtc.velocity.x = fwkPtcIniV * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * v);
+				fwkPtc.velocity.y = fwkPtcIniV * Math.cos(angle * Math.PI / 180) * (1 - Math.random() * v);
+			}
+			fwkPtc.position = [];
+			fwkPtc.position.x = x;
+			fwkPtc.position.y = y;
+			fwkPtc.style.left = fwkPtc.position.x + 'px';
+			fwkPtc.style.top = fwkPtc.position.y + 'px';
+			if(particles == null)
+				particles = [];
+			particles.push(fwkPtc);
+			return fwkPtc;
+		}
+
+		document.addEventListener("click", newFireWorkOnClick);
+
+		function newFireWorkOnClick(event)
+		{
+			// newFireworkSeed(event.pageX - brd.offsetLeft + cursorXOffset, event.pageY - brd.offsetTop + cursorYOffset);
+			// console.log(event.pageX - brd.offsetLeft + cursorXOffset);
+			// console.log(event.pageY - brd.offsetTop + cursorYOffset);
+			newFireworkSeed(279, 318);
+			newFireworkSeed(848, 581);
+			newFireworkSeed(473, 630)
+		}
+
+
+		function newFireworkSeed(x, y)
+		{
+			var fwkSed = document.createElement("DIV");
+			fwkSed.setAttribute('class', 'fireWorkSeed');
+			brd.appendChild(fwkSed);
+			fwkSed.time = fwkSedIniT;
+			fwkSed.velocity = [];
+			fwkSed.velocity.x = 0;
+			fwkSed.velocity.y = fwkSedIniV;
+			fwkSed.position = [];
+			fwkSed.position.x = x;
+			fwkSed.position.y = y;
+			fwkSed.style.left = fwkSed.position.x + 'px';
+			fwkSed.style.top = fwkSed.position.y + 'px';
+			if(seeds == null)
+				seeds = [];
+			seeds.push(fwkSed);
+			return fwkSed;
+		}
+		
+		function newFireWorkStar(x, y)
+		{
+			var fwkBch = document.createElement("DIV");
+			fwkBch.setAttribute('class', 'fireWorkBatch');
+			var a = 0;
+			while(a < 360)
+			{
+				var fwkPtc = newFireworkParticle(x, y, a);
+				fwkBch.appendChild(fwkPtc);
+				a += 5;
+			}
+			brd.appendChild(fwkBch);
+		}
+
+		var before = Date.now();
+		var id = setInterval(frame, 5);
+		
+		function frame()
+		{
+			var current = Date.now();
+			var deltaTime = current - before;
+			before = current;
+			for(i in seeds)
+			{
+				var fwkSed = seeds[i];
+				fwkSed.time -= deltaTime;
+				if(fwkSed.time > 0)
+				{
+					fwkSed.velocity.x -= fwkSed.velocity.x * a * deltaTime;
+					fwkSed.velocity.y -= g * deltaTime + fwkSed.velocity.y * a * deltaTime;
+					fwkSed.position.x += fwkSed.velocity.x * deltaTime;
+					fwkSed.position.y -= fwkSed.velocity.y * deltaTime;
+					fwkSed.style.left = fwkSed.position.x + 'px';
+					fwkSed.style.top = fwkSed.position.y + 'px';
+				}
+				else
+				{
+					newFireWorkStar(fwkSed.position.x, fwkSed.position.y);
+					fwkSed.parentNode.removeChild(fwkSed);
+					seeds.splice(i, 1);
+				}
+			}
+			for(i in particles)
+			{
+				var fwkPtc = particles[i];
+				fwkPtc.time -= deltaTime;
+				if(fwkPtc.time > 0)
+				{
+					fwkPtc.velocity.x -= fwkPtc.velocity.x * a * deltaTime;
+					fwkPtc.velocity.y -= g * deltaTime + fwkPtc.velocity.y * a * deltaTime;
+					fwkPtc.position.x += fwkPtc.velocity.x * deltaTime;
+					fwkPtc.position.y -= fwkPtc.velocity.y * deltaTime;
+					fwkPtc.style.left = fwkPtc.position.x + 'px';
+					fwkPtc.style.top = fwkPtc.position.y + 'px';
+				}
+				else
+				{
+					fwkPtc.parentNode.removeChild(fwkPtc);
+					particles.splice(i, 1);
+				}
+			}
+		}
+	</script>
 </html>
